@@ -1,0 +1,22 @@
+{
+  "name": "mega-builder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "generate": "ts-node src/generator/generator.ts",
+    "dev": "tsc-watch --onSuccess \"npm start\"",
+    "start": "node ./dist/builder.js"
+  },
+  "devDependencies": {
+    "tsc-watch": "^6.0.0",
+    "typescript": "^5.0.4",
+    "ts-node": "^10.9.1"
+  },
+  "dependencies": {
+    "@type-challenges/utils": "^0.1.1",
+    "glob": "^10.2.1"
+  }
+}
